@@ -1,5 +1,6 @@
 import java.util.concurrent.*;
 /*无大小界的线程池*/
+//这次的消息
 public class CacheThreadPool {
   public static ExecutorService newCachedThreadPool(){
       return new ThreadPoolExecutor(0,Integer.MAX_VALUE,60L,
