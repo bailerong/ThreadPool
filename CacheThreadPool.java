@@ -5,7 +5,6 @@ public class CacheThreadPool {
       return new ThreadPoolExecutor(0,Integer.MAX_VALUE,60L,
               TimeUnit.SECONDS,new SynchronousQueue<Runnable>());
   }
-
     public static void main(String[] args) {
         ExecutorService executorService= Executors.newCachedThreadPool();
         for(int i=0;i<5;i++){
