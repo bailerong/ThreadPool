@@ -6,8 +6,10 @@ public class CacheThreadPool {
               TimeUnit.SECONDS,new SynchronousQueue<Runnable>());
   }
     public static void main(String[] args) {
+      
         ExecutorService executorService= Executors.newCachedThreadPool();
-        for(int i=0;i<5;i++){
+      
+      for(int i=0;i<5;i++){
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
@@ -22,6 +24,7 @@ public class CacheThreadPool {
                 }
             });
         }
-        executorService.shutdown();
+      
+      executorService.shutdown();
     }
 }
