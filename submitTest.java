@@ -1,7 +1,5 @@
 import jdk.nashorn.internal.codegen.CompilerConstants;
-
 import java.util.concurrent.*;
-
 /*使用submit方法提交任务，获取返回值*/
 class CallableThread implements Callable<String> {
     @Override
@@ -31,3 +29,4 @@ public class submitTest {
         }
     }
 }
+//我们的提交返回
