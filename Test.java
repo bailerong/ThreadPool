@@ -11,7 +11,6 @@ class RunnableThread implements Runnable{
     }
 }
 public class Test {
-
     public static void main(String[] args) {
         RunnableThread runnableThread=new RunnableThread();
        ThreadPoolExecutor threadPoolExecutor=
