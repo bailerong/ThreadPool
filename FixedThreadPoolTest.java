@@ -1,5 +1,4 @@
 import java.util.concurrent.*;
-
 public class FixedThreadPoolTest {
     public static ExecutorService newFixedThreadPool(int nThreads){
         return new ThreadPoolExecutor(nThreads,nThreads,0L, TimeUnit.MILLISECONDS,
@@ -21,3 +20,4 @@ public class FixedThreadPoolTest {
         executorService.shutdown();
     }
 }
+//我们的固定数量的线程池
